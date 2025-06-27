@@ -1,0 +1,42 @@
+# Let's Walk with Friends
+I, along with my friends Sanya and Leslie, will be walking everyday for the next 30 days, aiming to complete **7500 steps** everyday.
+*Let's see if we can complete this challenge.*
+![We Got This!](image.png)
+
+## Goals
+- [x] Collect Data from Fitness Tracker
+- [ ] Count the calories for each walk
+
+## Table
+Summarizing the first 5 days of the challenge:
+
+| Day    | Steps Walked | Target Met |
+|--------|--------------|------------|
+| Day 1  | 8,235        | Yes        |
+| Day 2  | 10,500       | Yes        |
+| Day 3  | 6,800        | No         |
+| Day 4  | 9,125        | Yes        |
+| Day 5  | 7,210        | No         |
+
+## Comparing the Friends
+- My average for 5 days is **8374 steps/day**
+- My friends' averages are:
+1. Sanya's Average : **7600 steps/day**
+2. Leslie's Average : **9820 steps/day**
+
+## Summary
+~~One Day~~ Day One
+[Calorie Counter](https://www.calculator.net/calorie-calculator.html)
+> "The first 5 days were difficult, but atleast we have all showed up every single day."
+
+---
+
+```cpp
+#include <stdio>
+#include <iostream>
+
+char output[] = "Let's see how next week goes!"
+```
+`{cpp} output`
+
+<!-- end of report -->
