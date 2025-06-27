@@ -1,0 +1,180 @@
+[
+    [
+        "https://www.imdb.com/title/tt32550101/?ref_=sr_t_1",
+        "1. Straw",
+        "2025",
+        "6.5"
+    ],
+    [
+        "https://www.imdb.com/title/tt31121295/?ref_=sr_t_2",
+        "2. Deep Cover",
+        "2025",
+        "6.7"
+    ],
+    [
+        "https://www.imdb.com/title/tt27052633/?ref_=sr_t_3",
+        "3. Echo Valley",
+        "2025",
+        "6.2"
+    ],
+    [
+        "https://www.imdb.com/title/tt7068946/?ref_=sr_t_4",
+        "4. The Accountant 2",
+        "2025",
+        "6.7"
+    ],
+    [
+        "https://www.imdb.com/title/tt30253473/?ref_=sr_t_5",
+        "5. Materialists",
+        "2025",
+        "6.9"
+    ],
+    [
+        "https://www.imdb.com/title/tt0899043/?ref_=sr_t_6",
+        "6. The Amateur",
+        "2025",
+        "6.5"
+    ],
+    [
+        "https://www.imdb.com/title/tt31710249/?ref_=sr_t_7",
+        "7. Stick",
+        "2025– ",
+        "7.0"
+    ],
+    [
+        "https://www.imdb.com/title/tt32260680/?ref_=sr_t_8",
+        "8. The Better Sister",
+        "2025",
+        "7.0"
+    ],
+    [
+        "https://www.imdb.com/title/tt13064902/?ref_=sr_t_9",
+        "9. FUBAR",
+        "2023– ",
+        "6.5"
+    ],
+    [
+        "https://www.imdb.com/title/tt28703560/?ref_=sr_t_10",
+        "10. The Survivors",
+        "2025",
+        "6.6"
+    ],
+    [
+        "https://www.imdb.com/title/tt31429675/?ref_=sr_t_11",
+        "11. Sirens",
+        "2025",
+        "6.8"
+    ],
+    [
+        "https://www.imdb.com/title/tt9619824/?ref_=sr_t_12",
+        "12. Final Destination: Bloodlines",
+        "2025",
+        "6.9"
+    ],
+    [
+        "https://www.imdb.com/title/tt11655566/?ref_=sr_t_13",
+        "13. Lilo & Stitch",
+        "2025",
+        "6.9"
+    ],
+    [
+        "https://www.imdb.com/title/tt30840798/?ref_=sr_t_14",
+        "14. The Phoenician Scheme",
+        "2025",
+        "6.9"
+    ],
+    [
+        "https://www.imdb.com/title/tt36240772/?ref_=sr_t_15",
+        "15. K.O.",
+        "2025",
+        "5.8"
+    ],
+    [
+        "https://www.imdb.com/title/tt35396529/?ref_=sr_t_16",
+        "16. Mountainhead",
+        "2025",
+        "5.4"
+    ],
+    [
+        "https://www.imdb.com/title/tt12299608/?ref_=sr_t_17",
+        "17. Mickey 17",
+        "2025",
+        "6.8"
+    ],
+    [
+        "https://www.imdb.com/title/tt27075958/?ref_=sr_t_18",
+        "18. Fountain of Youth",
+        "2025",
+        "5.7"
+    ],
+    [
+        "https://www.imdb.com/title/tt27757546/?ref_=sr_t_19",
+        "19. Diablo",
+        "2025",
+        "5.6"
+    ],
+    [
+        "https://www.imdb.com/title/tt1674782/?ref_=sr_t_20",
+        "20. Karate Kid: Legends",
+        "2025",
+        "6.6"
+    ],
+    [
+        "https://www.imdb.com/title/tt23060698/?ref_=sr_t_21",
+        "21. Clown in a Cornfield",
+        "2025",
+        "5.7"
+    ],
+    [
+        "https://www.imdb.com/title/tt27812086/?ref_=sr_t_22",
+        "22. Cleaner",
+        "2025",
+        "5.1"
+    ],
+    [
+        "https://www.imdb.com/title/tt21815562/?ref_=sr_t_23",
+        "23. The Alto Knights",
+        "2025",
+        "5.8"
+    ],
+    [
+        "https://www.imdb.com/title/tt14513804/?ref_=sr_t_24",
+        "24. Captain America: Brave New World",
+        "2025",
+        "5.7"
+    ],
+    [
+        "https://www.imdb.com/title/tt31176520/?ref_=sr_t_25",
+        "25. Eddington",
+        "2025",
+        "5.8"
+    ]
+]
+
+[
+  { "id": "tt32550101", "title": "1. Straw", "year": "2025", "rating": "6.5" },
+  { "id": "tt31121295", "title": "2. Deep Cover", "year": "2025", "rating": "6.7" },
+  { "id": "tt27052633", "title": "3. Echo Valley", "year": "2025", "rating": "6.2" },
+  { "id": "tt7068946", "title": "4. The Accountant 2", "year": "2025", "rating": "6.7" },
+  { "id": "tt30253473", "title": "5. Materialists", "year": "2025", "rating": "6.9" },
+  { "id": "tt0899043", "title": "6. The Amateur", "year": "2025", "rating": "6.5" },
+  { "id": "tt31710249", "title": "7. Stick", "year": "2025– ", "rating": "7.0" },
+  { "id": "tt32260680", "title": "8. The Better Sister", "year": "2025", "rating": "7.0" },
+  { "id": "tt13064902", "title": "9. FUBAR", "year": "2023– ", "rating": "6.5" },
+  { "id": "tt28703560", "title": "10. The Survivors", "year": "2025", "rating": "6.6" },
+  { "id": "tt31429675", "title": "11. Sirens", "year": "2025", "rating": "6.8" },
+  { "id": "tt9619824", "title": "12. Final Destination: Bloodlines", "year": "2025", "rating": "6.9" },
+  { "id": "tt11655566", "title": "13. Lilo & Stitch", "year": "2025", "rating": "6.9" },
+  { "id": "tt30840798", "title": "14. The Phoenician Scheme", "year": "2025", "rating": "6.9" },
+  { "id": "tt36240772", "title": "15. K.O.", "year": "2025", "rating": "5.8" },
+  { "id": "tt35396529", "title": "16. Mountainhead", "year": "2025", "rating": "5.4" },
+  { "id": "tt12299608", "title": "17. Mickey 17", "year": "2025", "rating": "6.8" },
+  { "id": "tt27075958", "title": "18. Fountain of Youth", "year": "2025", "rating": "5.7" },
+  { "id": "tt27757546", "title": "19. Diablo", "year": "2025", "rating": "5.6" },
+  { "id": "tt1674782", "title": "20. Karate Kid: Legends", "year": "2025", "rating": "6.6" },
+  { "id": "tt23060698", "title": "21. Clown in a Cornfield", "year": "2025", "rating": "5.7" },
+  { "id": "tt27812086", "title": "22. Cleaner", "year": "2025", "rating": "5.1" },
+  { "id": "tt21815562", "title": "23. The Alto Knights", "year": "2025", "rating": "5.8" },
+  { "id": "tt14513804", "title": "24. Captain America: Brave New World", "year": "2025", "rating": "5.7" },
+  { "id": "tt31176520", "title": "25. Eddington", "year": "2025", "rating": "5.8" }
+]
