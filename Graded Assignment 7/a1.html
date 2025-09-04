@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report - Financial Institution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Reveal.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+  <!-- Syntax highlighting theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+
+  <!-- MathJax support -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    
+    <!-- Slide 1: Title -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <h3>Q2 2025</h3>
+      <span style="display:none;" class="23f2003577@ds.study.iitm.ac.in" data-e="email"></span>
+      <p><strong>Email:</strong>
+        <a href="mailto:23f2003577@ds.study.iitm.ac.in">23f2003577@ds.study.iitm.ac.in</a>
+      </p>
+      <aside class="notes">
+        Welcome the audience, introduce yourself, and state the objective — to review our quarterly financial performance with an interactive and modern approach.
+      </aside>
+    </section>
+
+    <!-- Slide 2: Markdown example -->
+    <section data-markdown>
+      <textarea data-template>
+## Company Highlights - Q2 2025
+- Revenue growth **+15% YoY**
+- Net profit margin improved from **12% to 15%**
+- Expansion into **3 new markets**
+- Increased investment in **AI-driven analytics**
+      </textarea>
+      <aside class="notes">
+        Highlight the strong revenue growth, improved profit margin, and the strategic market expansions.
+      </aside>
+    </section>
+
+    <!-- Slide 3: Fragments for animation -->
+    <section>
+      <h2>Key Performance Drivers</h2>
+      <ul>
+        <li class="fragment">Increased digital transactions</li>
+        <li class="fragment">Cost optimization initiatives</li>
+        <li class="fragment">Product diversification</li>
+      </ul>
+      <aside class="notes">
+        Use each fragment to explain performance drivers one by one.
+      </aside>
+    </section>
+
+    <!-- Slide 4: Code sample with syntax highlighting -->
+    <section>
+      <h2>Data Analysis Code</h2>
+      <pre><code class="language-python">
+import pandas as pd
+
+# Load financial data
+data = {
+    "quarter": ["Q1 2025", "Q2 2025", "Q3 2025", "Q4 2025"],
+    "revenue": [5000000, 5750000, 6100000, 7000000]
+}
+
+df = pd.DataFrame(data)
+
+# Calculate quarterly growth
+df['growth'] = df['revenue'].pct_change() * 100
+print(df[['quarter', 'growth']])
+      </code></pre>
+      <aside class="notes">
+        This Python snippet shows how we computed quarterly revenue growth using Pandas.
+      </aside>
+    </section>
+
+    <!-- Slide 5: MathJax formula -->
+<section>
+  <h2>Statistical Formula</h2>
+  \[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]
+      <aside class="notes">
+        Explain how probability is calculated as an example.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<!-- Reveal.js core library -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<!-- Syntax highlighting -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealHighlight, RevealMath.KaTeX ],
+    slideNumber: true
+  });
+</script>
+
+</body>
+</html>

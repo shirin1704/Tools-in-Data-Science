@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Employee Department Distribution Report</title>
+<meta name="author" content="23f2003577@ds.study.iitm.ac.in">
+<style>
+body { font-family: Arial, sans-serif; margin: 2rem; }
+h1, h2 { color: #222; }
+code, pre { background: #f5f5f5; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+.output { background: #eef9f1; border-left: 4px solid #2e7d32; padding: 1rem; white-space: pre-wrap; }
+img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px; }
+footer { margin-top: 2rem; color: #555; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Employee Department Distribution</h1>
+<p><strong>Author:</strong> 23f2003577@ds.study.iitm.ac.in</p>
+
+<h2>Python Script (employee_viz.py)</h2>
+<pre><code># employee_viz.py
+# Author: 23f2003577@ds.study.iitm.ac.in
+# Loads employee data, counts HR frequency, and creates a histogram of departments.
+# If &#x27;employees.csv&#x27; is present in the working directory, it will be used.
+# Otherwise, we fall back to an embedded sample and synthesize up to 100 rows
+# to demonstrate the workflow.
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from io import StringIO
+import os
+
+def load_employee_data():
+    csv_path = &quot;employees.csv&quot;
+    if os.path.exists(csv_path):
+        df = pd.read_csv(csv_path)
+        return df
+
+    # Fallback to embedded sample (first 5 rows provided)
+    sample = (
+        &quot;employee_id,department,region,performance_score,years_experience,satisfaction_rating\n&quot;
+        &quot;EMP001,Marketing,Middle East,68.82,7,4.7\n&quot;
+        &quot;EMP002,Marketing,North America,90.74,8,3.7\n&quot;
+        &quot;EMP003,HR,Middle East,80.64,4,3\n&quot;
+        &quot;EMP004,Marketing,Europe,70.21,1,3.4\n&quot;
+        &quot;EMP005,Sales,Africa,77.31,7,3.5\n&quot;
+    )
+    df = pd.read_csv(StringIO(sample))
+
+    # Synthesize additional rows to reach 100 entries with realistic distributions
+    np.random.seed(42)
+    departments = [&quot;HR&quot;, &quot;Marketing&quot;, &quot;Sales&quot;, &quot;Engineering&quot;, &quot;Finance&quot;, &quot;Operations&quot;]
+    regions = [&quot;North America&quot;, &quot;Europe&quot;, &quot;Asia&quot;, &quot;Middle East&quot;, &quot;Africa&quot;, &quot;Latin America&quot;]
+    n_to_add = 100 - len(df)
+    synthetic = []
+    for i in range(n_to_add):
+        dept = np.random.choice(departments, p=[0.12, 0.22, 0.22, 0.22, 0.12, 0.10])
+        reg = np.random.choice(regions)
+        perf = np.clip(np.random.normal(loc=78, scale=8), 40, 100)  # 40-100
+        years = int(np.clip(np.random.normal(loc=6, scale=3), 0, 35))
+        sat = np.clip(np.random.normal(loc=3.6, scale=0.7), 1.0, 5.0)
+        emp_id = f&quot;EMP{len(df)+i+1:03d}&quot;
+        synthetic.append([emp_id, dept, reg, round(perf, 2), years, round(sat, 1)])
+
+    df2 = pd.DataFrame(synthetic, columns=df.columns)
+    df_all = pd.concat([df, df2], ignore_index=True)
+    return df_all
+
+def main():
+    df = load_employee_data()
+
+    # Calculate frequency count for HR department
+    hr_count = (df[&quot;department&quot;] == &quot;HR&quot;).sum()
+    print(f&quot;HR Department Count: {hr_count}&quot;)
+
+    # Histogram of departments (categorical -&gt; bar chart of counts)
+    counts = df[&quot;department&quot;].value_counts().sort_index()
+    plt.figure(figsize=(8, 5))
+    plt.bar(counts.index, counts.values)
+    plt.title(&quot;Distribution of Employees by Department&quot;)
+    plt.xlabel(&quot;Department&quot;)
+    plt.ylabel(&quot;Count of Employees&quot;)
+    plt.xticks(rotation=30, ha=&quot;right&quot;)
+    plt.tight_layout()
+
+    # Save visualization
+    plt.savefig(&quot;department_distribution.png&quot;, dpi=200, bbox_inches=&quot;tight&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+
+<h2>Console Output</h2>
+<div class="output">HR Department Count: 16
+</div>
+
+<h2>Visualization</h2>
+<p><em>Image not found.</em></p>
+
+<footer>
+Generated automatically by ChatGPT per user request. Dataset source: provided sample + synthetic augmentation when no employees.csv is present.
+</footer>
+</body>
+</html>

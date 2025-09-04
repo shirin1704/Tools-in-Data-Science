@@ -1,0 +1,8 @@
+Q1 : https://23f2003577.github.io/tds-ga7/a1.html?v=2
+Q2 : https://raw.githubusercontent.com/23f2003577/tds-ga7/refs/heads/main/a2.md
+Q3 : https://raw.githubusercontent.com/23f2003577/tds-ga7/refs/heads/main/a3.py
+Q4 : https://raw.githubusercontent.com/23f2003577/tds-ga7/refs/heads/main/a4/README.md?v=3 
+Q5 : https://raw.githubusercontent.com/23f2003577/tds-ga7/refs/heads/main/a5/README.md 
+Q6 : https://raw.githubusercontent.com/23f2003577/tds-ga7/refs/heads/main/a6/README.md
+Q7 : https://raw.githubusercontent.com/23f2003577/tds-ga7/refs/heads/main/a7.html
+Q8 : https://github.com/23f2003577/tds-ga7/pull/2?v=3
